@@ -2427,7 +2427,7 @@ img.ajaxloading {
 
   .banner__title {
     font-size: 32px;
-    margin-bottom: 30px;
+    margin-bottom: 8px;
   }
 
   .banner__list,
@@ -2435,6 +2435,7 @@ img.ajaxloading {
   .banner__text {
     font-size: 22px;
     margin-bottom: 30px;
+    margin-top: 8px;
   }
 
   .banner__slide {
@@ -2442,18 +2443,38 @@ img.ajaxloading {
     overflow: hidden;
   }
 
-  /*.banner__slide img {
-    position: absolute;
-    width: auto !important;
-    left: -59%;
-    height: 100%;
-    max-width: none;
-  }*/
+  .banner__info {
+    background-color: #fff;
+    background: rgba(255, 255, 255, 0.88);
+    padding: 10px;
+    width: 60%;
+    color: #000;
+    border-radius: 4px
+  }
 
   .textbox.houseCode {
     display: inline-block;
     width: 23.5%;
   }
+}
+
+@media screen and (max-width: 730px) {
+
+    .banner__container {
+      position: absolute;
+      top: auto;
+      bottom: 0;
+      margin-bottom: 20px;
+      color:#000;
+    }
+
+    .banner__info {
+      background-color: #fff;
+      background: rgba(255, 255, 255, 0.9);
+      width: 100%;
+      text-align: center;
+    }
+
 }
 
 @media screen and (max-width: 580px) {
@@ -2479,21 +2500,6 @@ img.ajaxloading {
     left: -185%;
   }*/
 
-  .banner__info {
-    background-color: #fff;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 10px;
-    width: 100%;
-    text-align: center;
-  }
-
-  .banner__container {
-    position: absolute;
-    top: auto;
-    bottom: 0;
-    margin-bottom: 20px;
-    color:#000;
-  }
 
   .access__btn {
     width: 100%;

@@ -357,6 +357,24 @@ text-decoration: none;
         font-size: 34px;
     }
 
+    .section-subtitle {
+      font-size: 20px;
+    }
+
+    .bid__form-title {
+      margin-bottom: 20px;
+    }
+
+    .card-info,
+    .c-card-step_list,
+    .bid__form {
+      margin-top: 36px;
+    }
+
+    .service-item-text {
+      font-size: 18px;
+    }
+
     .c-card-step {
         width: 49%;
         height: 176px;
@@ -435,7 +453,18 @@ text-decoration: none;
 
 @media all and (max-width: 480px) {
     .section-title {
-        font-size: 28px;
+        font-size: 24px;
+    }
+
+    .section-subtitle {
+      font-size: 16px;
+    }
+
+    .card-info,
+    .c-card-step_list,
+    .bid__form,
+    .service_list {
+      margin-top: 21px;
     }
 
     .service-item_img {
@@ -446,10 +475,6 @@ text-decoration: none;
     .service-item_body {
         margin-left: 0;
     }
-}
-
-
-@media all and (max-width: 380px) {
     .btn {
         width: 100%;
     }
@@ -617,24 +642,3 @@ text-decoration: none;
     -moz-box-shadow: 0px 13px 50px 5px rgba(0,0,0,0.13);
     box-shadow: 0px 13px 50px 5px rgba(0,0,0,0.13);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
