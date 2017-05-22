@@ -52,7 +52,7 @@
 }
 
 .menu-item:first-child {
-    margin: 0;
+    margin-left: 0;
 }
 
 
@@ -70,13 +70,13 @@ text-decoration: none;
 
 .section {
     border-bottom: 1px solid #e8e9ea;
-    padding: 60px 0 70px;
+    padding: 75px 0 85px;
 }
 
 .section-title {
     color:#292929;
     font-size: 40px;
-    margin: 0 0 10px;
+    margin: 0 0 4px;
     font-weight: 400;
 }
 
@@ -92,7 +92,7 @@ text-decoration: none;
     color:#666666;
     font-size: 22px;
     margin-bottom: 10px;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .section-container {
@@ -101,7 +101,13 @@ text-decoration: none;
 }
 
 .card-info {
-    margin-top: 75px;
+    margin-top: 58px;
+    padding-left: 48px;
+}
+
+.card-info_img {
+    padding-top: 28px;
+    padding-left: 10px;
 }
 
 .card-info::after {
@@ -110,14 +116,14 @@ text-decoration: none;
     clear: both;
 }
 
-.card-info-col4 {
+.card-info-col-left {
     float: left;
-    width: 40%;
+    width: 48%;
 }
 
-.card-info-col6 {
+.card-info-col-right {
     float: left;
-    width: 60%;
+    width: 52%;
 }
 
 /*c-info*/
@@ -148,12 +154,14 @@ text-decoration: none;
     float: left;
 }
 
-.c-info_col-4 {
-    width: 40%;
+.c-info_col-left {
+    width: 43%;
+    color:#999999;
 }
 
-.c-info_col-6 {
-    width: 60%;
+.c-info_col-right {
+    color: #292929;
+    width: 57%;
 }
 
 .c-info_col-title {
@@ -202,36 +210,44 @@ text-decoration: none;
 /*.c-card-step*/
 /*********************************/
 
-.section-step {
-    padding: 0 15px;
+.pl-85 {
+    padding-left: 85px;
 }
+/*.section-step {*/
+    /*padding-left: 85px;*/
+/*}*/
 
 .c-card-step_list {
-    text-align: justify;
-    margin-top: 50px;
+    /*text-align: justify;*/
+    margin-top: 63px;
 }
 
-.c-card-step_list::after {
-    content: '';
-    display: inline-block;
-    width: 100%;
-    font-size: 0;
-}
+/*.c-card-step_list::after {*/
+    /*content: '';*/
+    /*display: inline-block;*/
+    /*width: 100%;*/
+    /*font-size: 0;*/
+/*}*/
 
 .c-card-step {
     display: inline-block;
-    border: 1px solid #f3f4f4;
-    padding: 30px 23px;
-    /*margin: 0 7px;*/
-    width: 24%;
+    border: 2px solid #f3f4f4;
+    padding: 15px 23px;
+    margin: 0 4px;
+    width: 22%;
     font-size: 16px;
     text-align: left;
     color:#292929;
     height: 230px;
+    font-weight: 300;
+}
+
+.c-card-step:first-child {
+    margin-left: 0;
 }
 
 .c-card-step:last-child {
-    margin-bottom: 0;
+    margin-right: 0;
 }
 
 .c-card-step_img {
@@ -240,6 +256,10 @@ text-decoration: none;
 
 .c-card-step_text {
     line-height: 25px;
+}
+
+.c-card-step_text strong{
+    font-weight: 700;
 }
 
 .c-card-step_text [data-tooltip] {
@@ -251,7 +271,14 @@ text-decoration: none;
 /*.section-service*/
 /*********************************/
 .section-tariff .section-title {
-    margin-bottom: 36px;
+    margin-bottom: 28px;
+    font-weight: 300;
+}
+
+
+.section-tariff__container {
+    max-width: 870px;
+    margin: 0 auto;
 }
 
 
@@ -266,12 +293,12 @@ text-decoration: none;
 }
 
 .service_list {
-    width: 50%;
+    width: 57%;
     margin: 40px 0 0;
 }
 
 .service-item {
-    margin-bottom: 38px;
+    margin-bottom: 50px;
 }
 .service-item:last-child {
     margin-bottom: 0;
@@ -292,7 +319,14 @@ text-decoration: none;
 
 .service-item-text {
     font-size: 22px;
-    margin-bottom: 15px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 17px;
+    padding-top: 4px;
+}
+
+.service-item-text strong {
+    font-weight: 700;
 }
 
 .c-card-pay {
@@ -304,7 +338,7 @@ text-decoration: none;
     color: #459fc7;
     border-color: #459fc7;
     font-size: 22px;
-    margin-bottom: 10px;
+    margin-bottom: 11px;
 }
 
 .c-card-pay_text {
@@ -326,6 +360,15 @@ text-decoration: none;
     margin: 0 0 10px;
 }
 
+#submit-content {
+    text-align: center;
+}
+
+#submit-content .btn {
+    padding-left: 94px;
+    padding-right: 94px;
+}
+
 
 /*********************************/
 /*media*/
@@ -343,11 +386,22 @@ text-decoration: none;
     }
 }
 @media all and (max-width: 992px) {
-    .card-info-col4,
-    .card-info-col6 {
+    .card-info-col-left,
+    .card-info-col-right {
         width: 100%;
         float: none;
         margin-bottom: 20px;
+    }
+    .card-info {
+        padding: 0;
+    }
+    .card-info_img {
+        padding: 0;
+        text-align: center;
+    }
+
+    .pl-85 {
+        padding-left: 15px;
     }
 
     .service_list {
@@ -376,8 +430,8 @@ text-decoration: none;
     }
 
     .c-card-step {
-        width: 49%;
-        height: 176px;
+        width: 47%;
+        height: 198px;
         margin-bottom: 20px;
     }
 
@@ -387,8 +441,8 @@ text-decoration: none;
     }
 }
 @media all and (max-width: 679px) {
-    .c-info_col-4,
-    .c-info_col-6 {
+    .c-info_col-left,
+    .c-info_col-right {
         width: 100%;
         float: none;
     }
@@ -484,18 +538,18 @@ text-decoration: none;
 
 
 .res-tooltip{
-    z-index: 2;
     cursor: pointer;
     display: inline-block;
     width: 17px;
     height: 17px;
     border-radius: 50px;
-    border: 1px solid #787c81;
-    color: #787c81;
+    border: 1px solid #e4e4e5;
+    color: #838383;
     cursor: pointer;
     text-align: center;
     font-size: 13px;
-    line-height: 17px;
+    line-height: 16px;
+    vertical-align: middle;
 }
 
 #tooltip
