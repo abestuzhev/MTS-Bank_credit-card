@@ -203,8 +203,12 @@ select option {
 /*===============================================================
 ========================= TOP-HEADER ============================
 ===============================================================*/
-.top-header {
+.top-header.fixed {
   position: fixed;
+}
+
+.top-header {
+  /* position: fixed;*/
   top: 0;
   left: 0;
   width: 100%;
@@ -439,28 +443,54 @@ select option {
   background-color: #fff;
 }
 
-.footer__container {
+.footer-flex .footer__container {
   max-width: 870px;
-  /*display: -webkit-box;*/
-  /*display: -webkit-flex;*/
-  /*display: -moz-box;*/
-  /*display: -ms-flexbox;*/
-  /*display: flex;*/
-  /*-webkit-flex-wrap: wrap;*/
-  /*-ms-flex-wrap: wrap;*/
-  /*flex-wrap: wrap;*/
-  /*-webkit-box-orient: horizontal;*/
-  /*-webkit-box-direction: normal;*/
-  /*-webkit-flex-direction: row;*/
-  /*-moz-box-orient: horizontal;*/
-  /*-moz-box-direction: normal;*/
-  /*-ms-flex-direction: row;*/
-  /*flex-direction: row;*/
-  /*-webkit-box-pack: justify;*/
-  /*-webkit-justify-content: space-between;*/
-  /*-moz-box-pack: justify;*/
-  /*-ms-flex-pack: justify;*/
-  /*justify-content: space-between;*/
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -moz-box-orient: horizontal;
+  -moz-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.footer-flex .l-footer__service {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -moz-box-orient: horizontal;
+  -moz-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 52%;
 }
 
 .footer__container::after {
@@ -516,6 +546,43 @@ select option {
 
 .footer__service-link:hover:not(:first-child) {opacity: .6;}
 
+
+.footer__social-text {
+  color: #212121;
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.footer__social-link {
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: -1px;
+  background: url("../img/sprite.png") no-repeat;
+}
+
+.footer__social-link:nth-child(2) {
+  width: 10px;
+  height: 19px;
+  background-position: 0 -3px;
+}
+
+.footer__social-link:nth-child(3) {
+  width: 21px;
+  height: 16px;
+  background-position: -15px -5px;
+}
+
+.footer__social-link:nth-child(4) {
+  width: 20px;
+  height: 18px;
+  background-position: -41px -4px;
+}
+
+.footer__social-link + .footer__social-link {margin-left: 39px;}
+
+.footer__social-link:hover {opacity: .6;}
 
 .footer__copyright {
   border-top: 1px solid #eee;
@@ -598,8 +665,17 @@ text-align: justify;
 @media only screen and (max-width: 860px) {
 
   .footer__service {
-    width: 48%;
+     width: 48%;
+     margin-bottom: 18px;
+   }
+
+  .footer-flex .footer__service {
+    width: auto;
     margin-bottom: 18px;
+  }
+
+  .footer-flex .l-footer__service {
+    width: 100%;
   }
 
   .footer__service-link:first-child,
@@ -622,6 +698,10 @@ text-align: justify;
 @media only screen and (max-width: 480px) {
 
   .footer__service {
+    width: 100%;
+  }
+
+  .footer-flex .footer__service {
     width: 100%;
   }
 }
