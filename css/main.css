@@ -229,8 +229,6 @@ select option {
 }
 
 .top-header__nav {
-  text-align: justify;
-  width: 46%;
   font-size: 0;
 }
 
@@ -251,6 +249,11 @@ select option {
   text-align: left;
   border: none;
   color:#e30613;
+  margin: 0 30px;
+}
+
+.top-header__nav-link:last-child {
+  margin-right: 0;
 }
 
 .top-header__nav-link a {
