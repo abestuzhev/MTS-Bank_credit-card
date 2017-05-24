@@ -26,6 +26,13 @@ a {
   transition: all .3s ease-in;
   color: #e52423;
   border-bottom: 1px dotted #e52423;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 992px) {
+    a {
+      font-size: 14px;
+    }
 }
 
 
@@ -199,6 +206,10 @@ select option {
 .arrow_left {left: 16%;}
 .arrow_right {right: 16%;}
 
+@media all and (max-width: 1600px) {
+  .arrow_left {left: 6%;}
+  .arrow_right {right: 6%;}
+}
 
 /*===============================================================
 ========================= TOP-HEADER ============================
