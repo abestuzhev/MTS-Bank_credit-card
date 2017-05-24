@@ -443,6 +443,10 @@ select option {
   background-color: #fff;
 }
 
+.footer__container {
+  max-width: 870px;
+}
+
 .footer-flex .footer__container {
   max-width: 870px;
   display: -webkit-box;
