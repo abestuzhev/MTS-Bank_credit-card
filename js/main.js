@@ -285,6 +285,12 @@ $( function()
 
 
 
+//вопросы и ответы для страницы МТС Деньги. Вклад
 
+    $(".faq_question").click(function(e) {
+        e.preventDefault();
+        $(this).toggleClass('faq_active');
+        $(this).parents(".faq_item").find(".faq_answer").slideToggle();
+    });
 
 });

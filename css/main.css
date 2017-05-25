@@ -4,7 +4,7 @@
 html {font-size: 62.5%;}
 
 body {
-  font: 400 1.6rem "Roboto", arial, sans-serif;
+  font: 400 16px "Roboto", arial, sans-serif;
   color: #333;
   background-color: #fff;
 }
@@ -26,15 +26,21 @@ a {
   transition: all .3s ease-in;
   color: #e52423;
   border-bottom: 1px dotted #e52423;
-  font-size: 16px;
 }
 
 @media screen and (max-width: 992px) {
-    a {
+    body {
       font-size: 14px;
     }
 }
 
+/*span {
+  font-size: 14px;
+}*/
+
+.bid__input-wrapper lanel {
+  font-size: 14px;
+}
 
 ul, li {
   padding: 0;
