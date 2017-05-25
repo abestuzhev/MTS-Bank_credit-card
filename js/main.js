@@ -171,7 +171,7 @@ $( function()
         var init_tooltip = function()
         {
             if( $( window ).width() < tooltip.outerWidth() * 1.5 )
-                tooltip.css( 'max-width', $( window ).width() / 2 );
+                tooltip.css( 'max-width', $( window ).width() / 3 );
             else
                 tooltip.css( 'max-width', 340 );
 

@@ -186,9 +186,10 @@ text-decoration: none;
 
 
 .c-info_col-smalltext {
-    display: inline-block;
+    display: block;
     font-size: 18px;
     font-weight: 300;
+    margin-bottom: 16px;
 }
 
 .c-info_link {
@@ -334,7 +335,7 @@ text-decoration: none;
 }
 
 .c-card-pay {
-    margin-bottom: 20px;
+    margin-bottom: 6px;
 }
 
 .c-card-pay_link {
@@ -550,7 +551,7 @@ text-decoration: none;
     height: 17px;
     border-radius: 50px;
     border: 1px solid #e4e4e5;
-    color: #838383;
+    color: #838383 !important;
     cursor: pointer;
     text-align: center;
     font-size: 13px;
@@ -701,13 +702,112 @@ ul.tabs li.active {
     display: none;
 }
 
+.tab_content-list {
+
+    color: #666666;
+    margin-bottom: 24px;
+}
+
+.tab_content-list-item {
+    padding-top: 12px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid #dfdfe1;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.tab_content-list-item:last-child {
+    border: none;
+}
+
+.tab_content-list-item span {
+    color: #e52423;
+}
+
+.tab_content-table {
+    display: table;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    color: #666666;
+    border-bottom: 1px solid #dfdfe1;
+    padding-bottom: 20px;
+    font-weight: 300;
+}
+
+.tab_content-table-header .tab_content-table-col {
+    border-bottom: 1px solid #dfdfe1;
+}
+
+.tab_content-table-header {
+    display: table-row;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+
+.tab_content-table .last-table-col {
+    text-align: right;
+    color: #e52423;
+}
+
+.tab_content-table-row {
+    display: table-row;
+}
+
+.tab_content-table-col {
+    display: table-cell;
+    padding: 8px 0;
+}
+
+.tab_content-table-row .pt-4 {
+    padding-top: 26px;
+}
+
+.tab_content-table-res {
+    margin-top: 16px;
+    text-align: right;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #666666;
+}
+
+.tab_content-table-res span {
+    color: #e52423;
+}
+
+@media screen and (max-width: 992px) {
+    .tab_content-text p,
+    .tab_content-text-important,
+    .faq_question  {
+        font-size: 16px;
+    }
+
+    .tab_content-title {
+        font-size: 20px;
+    }
+}
+
 @media screen and (max-width: 767px) {
     .tabs {
         display: none;
     }
+    .tab_container {
+        margin-top: 30px;
+    }
+
+    .tab_content {
+        padding: 0 0 0 20px;
+    }
+
+    .tab_content-col {
+        width: 100%;
+        display: block;
+        padding: 20px 0;
+    }
 
     .tab-accordion_heading {
-        background-color: #fff;
+        background-color: #eee;
         margin: 0;
         padding: 10px 20px;
         display: block;
@@ -715,11 +815,12 @@ ul.tabs li.active {
         font-weight: normal;
         color: #666;
         font-size: 1em;
+        border-bottom: 1px solid #dfdfe1;
     }
 
     .d_active {
-        background-color: #e5e5e5;
-        color: #000;
+        background-color: #e52423;
+        color:#fff;
     }
 }
 
@@ -746,6 +847,10 @@ ul.tabs li.active {
     margin: 0;
     margin-bottom: -1px;
     padding-left: 15px;
+}
+
+.faq_item:last-child {
+    border: none;
 }
 
 .faq_question {
@@ -792,4 +897,34 @@ ul.tabs li.active {
 
 .faq_answer b {
     font-weight: 600;
+}
+
+
+@media screen and (max-width: 992px) {
+    .faq_question,
+    .faq_answer {
+        font-size: 16px;
+    }
+
+    .faq_question {
+        padding-left: 24px;
+    }
+
+    .faq_question::before {
+        left: 0;
+    }
+
+    .faq_answer {
+        padding: 11px 0 8px 0;
+
+    }
+
+    .faq_item {
+        padding: 14px 0;
+    }
+
+    .faq_list {
+        margin: 33px 0 0;
+    }
+
 }
