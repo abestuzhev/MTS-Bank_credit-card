@@ -179,7 +179,7 @@ text-decoration: none;
 }
 
 .c-info_col-right {
-    color: #292929;
+    color: #787c81;
     width: 57%;
 }
 
@@ -240,6 +240,10 @@ text-decoration: none;
 .c-card-step_list {
     /*text-align: justify;*/
     margin-top: 63px;
+}
+
+.section-deposit .c-card-step_list {
+    margin-top: 0;
 }
 
 /*.c-card-step_list::after {*/
@@ -429,8 +433,13 @@ text-decoration: none;
     .service_list {
         width: 100%;
     }
-    .section-title {
+    .section-title,
+    .title_card-name{
         font-size: 34px;
+    }
+
+    .title_card-name{
+        margin-bottom: 0;
     }
 
     .section-subtitle {
@@ -528,10 +537,12 @@ text-decoration: none;
 }
 
 @media all and (max-width: 480px) {
-    .section-title {
+    .section-title,
+    .title_card-name {
         font-size: 24px;
     }
 
+    .card-type,
     .section-subtitle {
       font-size: 16px;
     }
@@ -580,9 +591,10 @@ text-decoration: none;
     color: #fff;
     background: #787c81;
     position: absolute;
-    padding: 12px 18px;
+    padding: 14px 18px;
     z-index: 100;
     font-size: 13px;
+    line-height: 1.5;
     -webkit-box-shadow: 0px 13px 50px 5px rgba(0,0,0,0.13);
     -moz-box-shadow: 0px 13px 50px 5px rgba(0,0,0,0.13);
     box-shadow: 0px 13px 50px 5px rgba(0,0,0,0.13);
@@ -809,6 +821,7 @@ ul.tabs li.active {
     }
     .tab_container {
         margin-top: 30px;
+        padding: 0;
     }
 
     .tab_content {
