@@ -265,6 +265,8 @@ $( function()
 
     $(".tab-accordion_heading").click(function() {
 
+        $(this).siblings('.tab-accordion_heading').removeClass('tab-accordion_active');
+        $(this).addClass('tab-accordion_active');
         $(".tab_content").hide();
         var d_activeTab = $(this).attr("rel");
         $("#"+d_activeTab).fadeIn();

@@ -176,6 +176,7 @@ text-decoration: none;
 .c-info_col-left {
     width: 43%;
     color:#999999;
+    padding-right: 20px;
 }
 
 .c-info_col-right {
@@ -256,7 +257,7 @@ text-decoration: none;
 .c-card-step {
     display: inline-block;
     border: 2px solid #f3f4f4;
-    padding: 15px 23px;
+    padding: 15px 21px;
     margin: 0 4px;
     width: 22%;
     font-size: 16px;
@@ -678,6 +679,11 @@ ul.tabs li.active {
     background-color: #e52423;
     color:#fff;
     border: none;
+}
+
+.tab-accordion_heading.tab-accordion_active {
+    background-color: #e52423;
+    color:#fff;
 }
 
 .tab_container {
