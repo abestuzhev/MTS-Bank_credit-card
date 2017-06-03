@@ -1496,6 +1496,7 @@ text-align: justify;
 .bid {
   background-color: #f4f4f5;
   padding-bottom: 110px;
+  padding-top: 25px;
 }
 
 .bid__headline {
@@ -1508,7 +1509,7 @@ text-align: justify;
 .bid__form {
   max-width: 780px;
   margin: auto;
-  margin-top: 54px;
+  margin-top: 27px;
   border: 1px solid rgba(204, 204, 204, 0.51);
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -1715,6 +1716,7 @@ text-align: justify;
   font-size: 1.8rem;
   font-weight: 500;
   color: #000;
+  margin-bottom: 4px;
 }
 
 @media only screen and (max-width: 768px) {
